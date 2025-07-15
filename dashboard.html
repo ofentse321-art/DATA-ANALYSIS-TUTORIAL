@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Data Analysis for Beginners</title>
+  <style>
+    /* Base Styling */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #ffffff;
+      padding: 30px;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      background: linear-gradient(90deg, #00ffff, #ff00ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: glow 3s infinite alternate;
+    }
+
+    h2 {
+      color: #00ffff;
+      margin-top: 40px;
+    }
+
+    p, li {
+      font-size: 18px;
+    }
+
+    a {
+      color: #00ffff;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #ff00ff;
+    }
+
+    /* Table of Contents */
+    ol {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    ol li {
+      margin: 8px 0;
+    }
+
+    /* Table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+      border-radius: 12px;
+      overflow: hidden;
+      animation: fadeIn 2s ease;
+    }
+
+    table th, table td {
+      padding: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      text-align: left;
+    }
+
+    table th {
+      background-color: rgba(0, 255, 255, 0.2);
+      color: #00ffff;
+    }
+
+    /* Chart Box */
+    pre {
+      background: rgba(255, 255, 255, 0.07);
+      padding: 20px;
+      border-radius: 10px;
+      font-size: 18px;
+      color: #00ffff;
+      box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    /* Back Link */
+    a[href="/"] {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 10px 20px;
+      border: 1px solid #00ffff;
+      border-radius: 10px;
+      background: rgba(0, 255, 255, 0.1);
+      color: #00ffff;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    a[href="/"]:hover {
+      background: #00ffff;
+      color: #000;
+      box-shadow: 0 0 15px #00ffff;
+    }
+
+    /* Animations */
+    @keyframes glow {
+      0% { text-shadow: 0 0 5px #00ffff; }
+      100% { text-shadow: 0 0 20px #00ffff; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>👋 Welcome to the Data Analysis Tutorial!</h1>
+  <p style="text-align: center;">This is your learning dashboard. We’ll learn in a fun and simple way 😊</p>
+
+  <h2>📘 Table of Contents</h2>
+  <ol>
+    <li><a href="#what">What is Data Analysis?</a></li>
+    <li><a href="#why">Why is Data Important?</a></li>
+    <li><a href="#how">How Do We Analyze Data?</a></li>
+    <li><a href="#dataset">What is a Dataset?</a></li>
+    <li><a href="#example">Let's See an Example (Simple Table)</a></li>
+    <li><a href="#steps">Step-by-Step Analysis</a></li>
+    <li><a href="#charts">Drawing Charts (Pictures from Numbers!)</a></li>
+    <li><a href="#final">Final Thoughts</a></li>
+  </ol>
+
+  <h2 id="what">1. What is Data Analysis? 🤔</h2>
+  <p>Data means information. Analysis means studying or looking at something carefully.</p>
+  <p><strong>So, Data Analysis means:</strong> looking at information to understand it better and make good decisions.</p>
+
+  <h2 id="why">2. Why is Data Important? 💡</h2>
+  <p>We use data every day!</p>
+  <ul>
+    <li>When we count how many people like a song 🎵</li>
+    <li>When we check our school marks 📚</li>
+    <li>When a shop checks which toy sells the most 🧸</li>
+  </ul>
+
+  <h2 id="how">3. How Do We Analyze Data? 🔍</h2>
+  <p>We do these steps:</p>
+  <ol>
+    <li><strong>Collect data</strong> (Get information)</li>
+    <li><strong>Organize it</strong> (Put it in a table or list)</li>
+    <li><strong>Study it</strong> (Find patterns or answers)</li>
+    <li><strong>Show results</strong> (Draw graphs or write a summary)</li>
+  </ol>
+
+  <h2 id="dataset">4. What is a Dataset? 📊</h2>
+  <p>A dataset is just a group of data — like a table full of numbers or facts.</p>
+  <p>For example, we can make a dataset about favorite fruits of 5 students:</p>
+
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Favorite Fruit</th>
+    </tr>
+    <tr>
+      <td>Anna</td>
+      <td>Apple</td>
+    </tr>
+    <tr>
+      <td>Ben</td>
+      <td>Banana</td>
+    </tr>
+    <tr>
+      <td>Clara</td>
+      <td>Apple</td>
+    </tr>
+    <tr>
+      <td>David</td>
+      <td>Grapes</td>
+    </tr>
+    <tr>
+      <td>Ella</td>
+      <td>Banana</td>
+    </tr>
+  </table>
+
+  <h2 id="example">5. Let's See an Example! 🧮</h2>
+  <p>Let’s count how many people chose each fruit:</p>
+  <ul>
+    <li>🍎 Apple = 2</li>
+    <li>🍌 Banana = 2</li>
+    <li>🍇 Grapes = 1</li>
+  </ul>
+
+  <h2 id="steps">6. Step-by-Step Analysis 🪜</h2>
+  <ol>
+    <li>We looked at each person’s favorite fruit.</li>
+    <li>We counted how many liked Apple, Banana, and Grapes.</li>
+    <li>We found that Apple and Banana were the most liked.</li>
+    <li>Now we can tell a shop: “Buy more apples and bananas!”</li>
+  </ol>
+
+  <h2 id="charts">7. Drawing Charts 🖼️</h2>
+  <p>We can show the data in a picture too!</p>
+  <p><strong>This is called a "Bar Chart"</strong> (We can draw it later using Python!)</p>
+
+  <pre>
+Fruit     | Count
+-------------------
+Apple     | ██████ (2)
+Banana    | ██████ (2)
+Grapes    | ███     (1)
+  </pre>
+
+  <h2 id="final">8. Final Thoughts 🌟</h2>
+  <p>You just learned how to do simple data analysis!</p>
+  <p>Next time, we can learn how to use code (like Python) to do this faster!</p>
+
+  <br>
+  <a href="/">⬅️ Back to Sign Up</a>
+
+</body>
+</html>
